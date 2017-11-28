@@ -1,0 +1,36 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.0.M6'
+        kafkaVersion = '0.11.0.2'
+        scalaVersion = '2.11'
+        curatorVersion = '4.0.0'
+        confluentVersion = '3.3.1'
+    }
+    repositories {
+        mavenCentral()
+        maven { url "http://packages.confluent.io/maven/" }
+    }
+}
+
+group 'ru.techlab.risks.kstream'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "http://packages.confluent.io/maven/" }
+}
+
+dependencies {
+    compile("org.apache.kafka:kafka_$scalaVersion:$kafkaVersion")
+    compile("org.apache.kafka:kafka-streams:$kafkaVersion")
+    compile group: 'org.projectlombok', name: 'lombok-maven', version: '1.16.18.1', ext: 'pom'
+    testCompile("org.apache.curator:curator-test:$curatorVersion")
+    testCompile("org.apache.kafka:kafka-clients:$kafkaVersion:test")
+    testCompile("io.confluent:kafka-schema-registry:$confluentVersion:tests")
+    testCompile("org.apache.kafka:kafka_$scalaVersion:$kafkaVersion:test")
+    testCompile("junit:junit:4.12")
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: io.confluent:common-metrics:3.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.confluent/common-metrics/3.3.1/585a726712e50a601116eb38bf5414b7b4ea644a/common-metrics-3.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

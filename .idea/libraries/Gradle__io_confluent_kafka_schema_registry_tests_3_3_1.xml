@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: io.confluent:kafka-schema-registry:tests:3.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.confluent/kafka-schema-registry/3.3.1/bb89da5a0892b1c7538241dc04bf535bf6f0ac08/kafka-schema-registry-3.3.1-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
